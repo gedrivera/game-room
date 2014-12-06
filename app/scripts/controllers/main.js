@@ -9,9 +9,19 @@
  */
 angular.module('gameRoomApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  	$scope.myInterval = 5000;
+  	$scope.slides = [
+  		{
+      		image: '../../images/yeoman.png',
+      		text: ['Gangster']
+    	},  		
+    	{
+      		image: '../../images/yeoman.png',
+      		text: ['EASdfdsaf']
+    	},  		
+    	{
+      		image: '../../images/yeoman.png',
+      		text: ['Bungalo']
+    	}
     ];
   });

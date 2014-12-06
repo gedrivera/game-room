@@ -10,7 +10,8 @@
  */
 angular
   .module('gameRoomApp', [
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
