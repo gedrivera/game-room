@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes, height=device-height">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -22,7 +22,7 @@
 
     <!-- Add your site or application content here -->
     <div class="row">
-      <div class="container-fluid col-xs-6 col-sm-3 col-md-2 col-lg-2">
+      <div class="container-fluid col-sm-2 col-md-2 col-lg-2">
         <div class="sidebar">
           <ul class="nav nav-sidebar">
             <li><a ng-href="#/Poker">Poker</a></li>
@@ -34,24 +34,25 @@
         </div>
       </div>
 
-      <div class="container-fluid col-xs-6 col-sm-9 col-md-10 col-lg-10">
-        <div class="header">
-          <ul class="nav nav-pills pull-right">
-            <li class="active"><a ng-href="#">Home</a></li>
-            <li><a ng-href="#/about">About</a></li>
-            <li><a ng-href="#/contact">Contact</a></li>
-          </ul>
-          <h3 class="text-muted">gameRoom</h3>
-        </div>
+      <div class="container-fluid col-sm-10 col-md-10 col-lg-10">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container header">
+            <ul class="nav nav-pills pull-right">
+              <li class="active"><a ng-href="#">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/contact">Contact</a></li>
+            </ul>
+            <h3 class="text-muted">gameRoom</h3>
+          </div>
+        </nav>
         <div ng-view=""></div>
       </div>
     </div>
-        <div class="footer">
-          <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-        </div>
 
-
-
+    <div class="footer">
+      <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    </div>
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -77,6 +78,8 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/polymer/polymer.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
